@@ -27,6 +27,10 @@ const SectionInfo = styled.section`
     position: absolute;
     width: 100%;
     `
+// opt-out of image optimization, no-op
+const customLoader = ({ src }) => {
+  return src
+}
 export default function Home() {
   return (
     <>
@@ -37,7 +41,7 @@ export default function Home() {
       </Head>
       <BgImage />
       <SectionPortadaImage>
-        <Image src='/logo-portada.png' width={500} height={500} alt='logo' />
+        <Image src='/logo-portada.png' width={500} height={500} alt='logo' loader={customLoader} />
       </SectionPortadaImage>
       <SectionInfo>
         <div className='container'>
