@@ -3,6 +3,7 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import dynamic from 'next/dynamic'
 import styled from 'styled-components'
+import SectionCeremonyAndParty from '../components/SectionCeremonyAndParty'
 
 const BgImage = dynamic(() => import("../components/BGImage"), {
   ssr: false
@@ -15,33 +16,10 @@ align-items: center;
 height: 100vh;
 `
 
-const SectionInfo = styled.section`
-    font-weight: 400;
-    line-height: 1.5;
-    color: #212529;
-    text-align: left;
-    background-color: #fff;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 17px;
-    height: 400px;
-    position: absolute;
-    width: 100%;
-    `
 // opt-out of image optimization, no-op
 const customLoader = ({ src }) => {
   return src
 }
-
-const Button = styled.button`
-border: none; 
-color: white; 
-padding: 16px 32px; 
-text-align: center; 
-text-decoration: none; 
-font-size: 16px; 
-margin: 4px 2px; 
-cursor: pointer;
-`
 
 export default function Home() {
   return (
@@ -53,21 +31,12 @@ export default function Home() {
       </Head>
       <BgImage />
       <SectionPortadaImage>
-        <Image src='/logo-portada.png' width={500} height={500} alt='logo' loader={customLoader} />
-      </SectionPortadaImage>
-      <SectionInfo>
-        <div className='container'>
-          <div className='row'>
-            <div className='col-md-6 columna'>
-
-            </div>
-            <div className='col-md-6 columna'>
-              <Button>{'Hola'}</Button>
-            </div>
-
-          </div>
+        <div className={styles.portada}>
+          <Image src='/logo-portada.png' width={500} height={500} alt='logo' loader={customLoader} />
+          <div className={styles.arrow} />
         </div>
-      </SectionInfo>
+      </SectionPortadaImage>
+      <SectionCeremonyAndParty />
     </>
   )
 }

@@ -1,0 +1,9 @@
+.img {
+    vertical-align: middle;
+    border-style: none;
+}
+
+.btn:hover {
+    color: #9AB09C;
+    background-color: white;
+}
