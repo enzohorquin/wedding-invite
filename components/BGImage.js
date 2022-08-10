@@ -8,7 +8,6 @@ const Box = styled.div`
     top: 0;
 `
 
-
 function getWindowDimensions() {
     const { innerWidth, innerHeight } = window
     return {

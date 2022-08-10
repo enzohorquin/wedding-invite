@@ -16,7 +16,7 @@ height: 100vh;
 `
 
 const SectionInfo = styled.section`
-  font-weight: 400;
+    font-weight: 400;
     line-height: 1.5;
     color: #212529;
     text-align: left;
@@ -31,6 +31,18 @@ const SectionInfo = styled.section`
 const customLoader = ({ src }) => {
   return src
 }
+
+const Button = styled.button`
+border: none; 
+color: white; 
+padding: 16px 32px; 
+text-align: center; 
+text-decoration: none; 
+font-size: 16px; 
+margin: 4px 2px; 
+cursor: pointer;
+`
+
 export default function Home() {
   return (
     <>
@@ -50,7 +62,7 @@ export default function Home() {
 
             </div>
             <div className='col-md-6 columna'>
-
+              <Button>{'Hola'}</Button>
             </div>
 
           </div>
