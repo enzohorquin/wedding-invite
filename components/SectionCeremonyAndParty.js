@@ -68,7 +68,7 @@ function SectionCeremonyAndParty() {
                             <Paragraph>
                                 {'La ceremonia se realizará el 12 de Marzo a las 19:00 horas en la Parroquia Ntra. Sra. del Carmen, Tigre. Tocá el botón de abajo para recibir las indicaciones para llegar.'}
                             </Paragraph>
-                            <Button>{'Llegar a la ceremonia'}</Button>
+                            <Button className={styles.btn}>{'Llegar a la ceremonia'}</Button>
                         </TextContainers>
                     </Column>
                     <Column className='col-md-6'>
