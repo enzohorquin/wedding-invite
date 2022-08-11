@@ -6,6 +6,7 @@ import styled from 'styled-components'
 import SectionCeremonyAndParty from '../components/SectionCeremonyAndParty'
 import SectionAssistance from '../components/SectionAssistance'
 import SectionGift from '../components/SectionGift'
+import SectionFooter from '../components/SectionFooter'
 
 const BgImage = dynamic(() => import("../components/BGImage"), {
   ssr: false
