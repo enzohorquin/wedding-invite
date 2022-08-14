@@ -2,6 +2,7 @@ import Image from 'next/image'
 import styled from 'styled-components'
 import styles from '../styles/SectionCeremonyAndParty.module.css'
 
+//To Do Move to a common styles all this components
 const SectionInfo = styled.section`
     font-weight: 400;
     line-height: 1.5;
@@ -9,10 +10,12 @@ const SectionInfo = styled.section`
     background-color: #fff;
     font-family: 'Montserrat', sans-serif;
     font-size: 17px;
-    height: 400px;
     position: absolute;
     width: 100%;
+    height: 100%;
     align-items: center;
+    position: relative;
+    padding-bottom: 20px;
     `
 const Title = styled.h4`
     font-family: 'Montserrat', sans-serif;

@@ -4,11 +4,12 @@ const Container = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100%;
+    height: 100%;
 `
 
 const SectionInfo = styled.section`
     text-align: center;
-    padding: 120px 0 120px;
     font-weight: 400;
     line-height: 1.5;
     text-align: left;
@@ -18,15 +19,8 @@ const SectionInfo = styled.section`
     height: 100px;
     width: 100%;
     align-items: center;
-`
-const Title = styled.h4`
-    font-family: 'Montserrat', sans-serif;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    font-size: 25px;
-    font-weight: 400;
-    margin-top: 15px;
-    margin-bottom: 20px;
+    position: relative;
+    padding-top: 20px;
 `
 const Column = styled.div`
     text-align: center;
@@ -56,13 +50,9 @@ function SectionFooter() {
     return (
         <SectionInfo>
             <Container>
-                <Column className='col-md-6' >
-                    <TextContainers>
-                        <Paragraph>
-                            {'¡Gracias por acompañarnos en este momento tan importante!'}
-                        </Paragraph>
-                    </TextContainers>
-                </Column>
+                <Paragraph>
+                    {'¡Gracias por acompañarnos en este momento tan importante!'}
+                </Paragraph>
             </Container>
         </SectionInfo>)
 }

@@ -6,6 +6,8 @@ const Container = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100%;
+    height: 100%;
 `
 
 const SectionInfo = styled.section`
@@ -14,22 +16,16 @@ const SectionInfo = styled.section`
     font-weight: 400;
     line-height: 1.5;
     text-align: left;
-    background-color: transparent;
+    background-color: #FFF;
     font-family: 'Montserrat', sans-serif;
     font-size: 17px;
     height: 350px;
     width: 100%;
     align-items: center;
+    position: relative;
+    padding-top: 20px;
 `
-const Title = styled.h4`
-    font-family: 'Montserrat', sans-serif;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    font-size: 25px;
-    font-weight: 400;
-    margin-top: 15px;
-    margin-bottom: 20px;
-`
+
 const Column = styled.div`
     text-align: center;
 `
@@ -67,14 +63,14 @@ function SectionGift() {
         <SectionInfo>
             <Container>
                 <Column className='col-md-6' >
-                <Image className={styles.img} src='/icono-regalo.svg' width={150} height={150} loader={customLoader} alt='ceremonia' />
+                    <Image className={styles.img} src='/icono-regalo.svg' width={150} height={150} loader={customLoader} alt='ceremonia' />
 
-                        <TextContainers>
-                            <Paragraph>
-                                {'Si deseás realizarnos un regalo podés colaborar con nuestra Luna de Miel...'}
-                            </Paragraph>
-                            <Button className={styles.btn}>{'Ver datos bancarios'}</Button>
-                        </TextContainers>
+                    <TextContainers>
+                        <Paragraph>
+                            {'Si deseás realizarnos un regalo podés colaborar con nuestra Luna de Miel...'}
+                        </Paragraph>
+                        <Button className={styles.btn}>{'Ver datos bancarios'}</Button>
+                    </TextContainers>
                 </Column>
             </Container>
         </SectionInfo>)

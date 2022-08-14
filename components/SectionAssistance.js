@@ -1,24 +1,31 @@
 import styled from 'styled-components'
 import styles from '../styles/SectionAssistance.module.css'
 
+//To Do Move to a common styles all this components
+
 const Container = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100%;
+    height: 100%;
 `
 
 const SectionInfo = styled.section`
     text-align: center;
-    padding: 120px 0 120px;
     font-weight: 400;
     line-height: 1.5;
-    text-align: left;
-    background-color: #fff;
+    background-color: transparent;
     font-family: 'Montserrat', sans-serif;
     font-size: 17px;
     height: 350px;
     width: 100%;
     align-items: center;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding-bottom: 40px;
 `
 const Title = styled.h4`
     font-family: 'Montserrat', sans-serif;
@@ -66,15 +73,15 @@ function SectionAssistance() {
         <SectionInfo>
             <Container>
                 <Column className='col-md-6' >
-                        <Title>
-                            {'CONFIRMACIÓN DE ASISTENCIA'}
-                        </Title>
-                        <TextContainers>
-                            <Paragraph>
-                                {'Esperamos que seas parte de esta gran celebración. ¡Confirmanos tu asistencia!'}
-                            </Paragraph>
-                            <Button className={styles.btn}>{'Confirmar asistencia'}</Button>
-                        </TextContainers>
+                    <Title>
+                        {'CONFIRMACIÓN DE ASISTENCIA'}
+                    </Title>
+                    <TextContainers>
+                        <Paragraph>
+                            {'Esperamos que seas parte de esta gran celebración. ¡Confirmanos tu asistencia!'}
+                        </Paragraph>
+                        <Button className={styles.btn}>{'Confirmar asistencia'}</Button>
+                    </TextContainers>
                 </Column>
             </Container>
         </SectionInfo>)

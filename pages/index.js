@@ -7,6 +7,7 @@ import SectionCeremonyAndParty from '../components/SectionCeremonyAndParty'
 import SectionAssistance from '../components/SectionAssistance'
 import SectionGift from '../components/SectionGift'
 import SectionFooter from '../components/SectionFooter'
+import SectionGalery from '../components/SectionGalery'
 
 const BgImage = dynamic(() => import("../components/BGImage"), {
   ssr: false
@@ -38,8 +39,14 @@ export default function Home() {
           <Image src='/logo-portada-ayc.png' width={500} height={500} alt='logo' loader={customLoader} />
           <div className={styles.arrow} />
         </div>
-      </SectionPortadaImage>
-      <SectionCeremonyAndParty />
+      </SectionPortadaImage >
+      <div>
+        <SectionCeremonyAndParty />
+        <SectionGalery />
+        <SectionGift />
+        <SectionAssistance />
+        <SectionFooter />
+      </div>
     </>
   )
 }
