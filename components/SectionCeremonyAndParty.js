@@ -73,9 +73,9 @@ function SectionCeremonyAndParty() {
                         </Title>
                         <TextContainers>
                             <Paragraph>
-                                {'La ceremonia se realizará el 8 de Diciembre a las 19:00 horas en la Parroquia Ntra. Sra. del Carmen, Tigre. Tocá el botón de abajo para recibir las indicaciones para llegar.'}
+                                {'La ceremonia se realizará el 7 de Diciembre a las 18:30 horas en la Capilla María Auxiliadora, Mar del Plata. Tocá el botón de abajo para recibir las indicaciones para llegar.'}
                             </Paragraph>
-                            <Button className={styles.btn} onClick={() => openInNewTab('')}>{'Llegar a la ceremonia'}</Button>
+                            <Button className={styles.btn} onClick={() => openInNewTab('https://www.google.com/maps/dir//Capilla+Mar%C3%ADa+Auxiliadora+mar+del+plata/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x9584d93db023d387:0x34bd91497b531fad?sa=X&ved=2ahUKEwiQo4ONz-D5AhX9rZUCHbPVBMIQ9Rd6BAgxEAM')}>{'Llegar a la ceremonia'}</Button>
                         </TextContainers>
                     </Column>
                     <Column className='col-md-6'>

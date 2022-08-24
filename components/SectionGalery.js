@@ -25,10 +25,10 @@ function SectionGalery() {
         <SectionGaleryImages>
             <div className='row'>
                 <DivImageContainer className='col-12 col-md-6'>
-                    <Image className={styles['image-galery']} width={954} height={648} src='/imagen-1.jpg' loader={customLoader} />
+                    <Image className={styles['image-galery']} width={954} height={648} src='/imagen1.jpg' loader={customLoader} />
                 </DivImageContainer>
                 <DivImageContainer className='col-12 col-md-6'>
-                    <Image className={styles['image-galery']} width={954} height={648} src='/image-2.jpg' loader={customLoader} />
+                    <Image className={styles['image-galery']} width={954} height={648} src='/imagen2.jpg' loader={customLoader} />
                 </DivImageContainer>
 
             </div>

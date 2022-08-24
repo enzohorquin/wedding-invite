@@ -1,7 +1,6 @@
 import Image from 'next/image'
 import styled from 'styled-components'
 import styles from '../styles/SectionGift.module.css'
-import PopUp from '../components/PopUp'
 
 const Container = styled.div`
     display: flex;
