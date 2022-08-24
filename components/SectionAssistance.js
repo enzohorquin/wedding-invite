@@ -68,6 +68,10 @@ const customLoader = ({ src }) => {
     return src
 }
 
+const openInNewTab = url => {
+    window.open(url, '_blank', 'noopener,noreferrer');
+};
+
 function SectionAssistance() {
     return (
         <SectionInfo>

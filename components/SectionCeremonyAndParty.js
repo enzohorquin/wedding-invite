@@ -57,6 +57,10 @@ const customLoader = ({ src }) => {
     return src
 }
 
+const openInNewTab = url => {
+    window.open(url, '_blank', 'noopener,noreferrer');
+};
+
 function SectionCeremonyAndParty() {
     return (
         <SectionInfo>
@@ -69,9 +73,9 @@ function SectionCeremonyAndParty() {
                         </Title>
                         <TextContainers>
                             <Paragraph>
-                                {'La ceremonia se realizará el 12 de Marzo a las 19:00 horas en la Parroquia Ntra. Sra. del Carmen, Tigre. Tocá el botón de abajo para recibir las indicaciones para llegar.'}
+                                {'La ceremonia se realizará el 8 de Diciembre a las 19:00 horas en la Parroquia Ntra. Sra. del Carmen, Tigre. Tocá el botón de abajo para recibir las indicaciones para llegar.'}
                             </Paragraph>
-                            <Button className={styles.btn}>{'Llegar a la ceremonia'}</Button>
+                            <Button className={styles.btn} onClick={() => openInNewTab('')}>{'Llegar a la ceremonia'}</Button>
                         </TextContainers>
                     </Column>
                     <Column className='col-md-6'>
@@ -81,9 +85,9 @@ function SectionCeremonyAndParty() {
                         </Title>
                         <TextContainers>
                             <Paragraph>
-                                {'Después de la ceremonia festejaremos en Astilleros Milberg, Nordelta. Tocá el botón de abajo y encontrá las indicaciones para llegar, te esperamos 😉            '}
+                                {'Después de la ceremonia festejaremos en Luxemburgo Haus, Sierra de los Padres. Tocá el botón de abajo y encontrá las indicaciones para llegar, te esperamos 😉            '}
                             </Paragraph>
-                            <Button className={styles.btn}>{'Llegar a la fiesta'}</Button>
+                            <Button className={styles.btn} onClick={() => openInNewTab('https://www.google.com/maps/dir//luxemburgo+sierra+de+los+padres/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x958528f3d9bebeef:0x11538590bd8c2541?sa=X&ved=2ahUKEwigu4q6vsH5AhUakZUCHQTWCkoQ9Rd6BAhBEAU')}> {'Llegar a la fiesta'}</Button>
                         </TextContainers>
                     </Column>
                 </div>
