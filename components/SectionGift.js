@@ -71,9 +71,9 @@ function SectionGift() {
 
                     <TextContainers>
                         <Paragraph>
-                            {'Si deseás realizarnos un regalo podés colaborar con nuestra Luna de Miel...'}
+                            {'El mejor regalo es tu presencia en este momento tan importante para nosotros, pero si desean colaborar con nuestra luna de miel tendremos esa noche a su disposición sobres y un cofre donde pueden dejar su presente.'}
                         </Paragraph>
-                        <Button className={styles.btn}>{'Ver datos bancarios'}</Button>
+                        <Button className={styles.btn} onClick={() => openInNewTab('https://docs.google.com/document/d/1kbbRRhBjoWej0bXiAEYVEuvUHc0frLIBplHT_gksA6c/edit?usp=sharing')}>{'Ver datos bancarios'}</Button>
                     </TextContainers>
                 </Column>
             </Container>

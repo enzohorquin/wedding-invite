@@ -82,7 +82,7 @@ function SectionAssistance() {
                     </Title>
                     <TextContainers>
                         <Paragraph>
-                            {'Esperamos que seas parte de esta gran celebración. TEXTO QUE EXPLICA LO DEL VIDEO.\n ¡Confirmanos tu asistencia!.'}
+                            {'Deseamos que seas parte de esta gran celebración.\nNecesitamos tu confirmación con un video gracioso de los que asistan de unos 30 segundos con el telefóno en horizontal.\n Envialo antes del 15 de Octubre. Además no olvides de confirmar asistencia apretando el siguiente botón.'}
                         </Paragraph>
                         <Button className={styles.btn} onClick={() => openInNewTab('https://docs.google.com/forms/d/e/1FAIpQLScRLJjD2GcH7LEuikpqM1HN1NHY1zzHs9LnQDXLC3rvhHSKYA/viewform?usp=sf_link')}>
                             {'Confirmar asistencia'}

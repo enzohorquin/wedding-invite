@@ -85,7 +85,7 @@ function SectionCeremonyAndParty() {
                         </Title>
                         <TextContainers>
                             <Paragraph>
-                                {'Después de la ceremonia festejaremos en Luxemburgo Haus, Sierra de los Padres. Tocá el botón de abajo y encontrá las indicaciones para llegar, te esperamos 😉            '}
+                                {'Después de la ceremonia festejaremos en Luxemburgo Haus, Ruta 226 KM 12. Tocá el botón de abajo y encontrá las indicaciones para llegar, te esperamos 😉            '}
                             </Paragraph>
                             <Button className={styles.btn} onClick={() => openInNewTab('https://www.google.com/maps/dir//luxemburgo+sierra+de+los+padres/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x958528f3d9bebeef:0x11538590bd8c2541?sa=X&ved=2ahUKEwigu4q6vsH5AhUakZUCHQTWCkoQ9Rd6BAhBEAU')}> {'Llegar a la fiesta'}</Button>
                         </TextContainers>
