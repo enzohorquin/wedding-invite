@@ -19,7 +19,7 @@ const SectionInfo = styled.section`
     background-color: #FFF;
     font-family: 'Montserrat', sans-serif;
     font-size: 17px;
-    height: 350px;
+    height: 400px;
     width: 100%;
     align-items: center;
     position: relative;
@@ -58,10 +58,6 @@ const customLoader = ({ src }) => {
     return src
 }
 
-const openInNewTab = url => {
-    window.open(url, '_blank', 'noopener,noreferrer');
-};
-
 function SectionGift() {
     return (
         <SectionInfo>
@@ -73,7 +69,6 @@ function SectionGift() {
                         <Paragraph>
                             {'El mejor regalo es tu presencia en este momento tan importante para nosotros, pero si desean colaborar con nuestra luna de miel tendremos esa noche a su disposición sobres y un cofre donde pueden dejar su presente.'}
                         </Paragraph>
-                        <Button className={styles.btn} onClick={() => openInNewTab('https://docs.google.com/document/d/1kbbRRhBjoWej0bXiAEYVEuvUHc0frLIBplHT_gksA6c/edit?usp=sharing')}>{'Ver datos bancarios'}</Button>
                     </TextContainers>
                 </Column>
             </Container>
