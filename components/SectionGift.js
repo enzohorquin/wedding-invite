@@ -19,7 +19,7 @@ const SectionInfo = styled.section`
     background-color: #FFF;
     font-family: 'Montserrat', sans-serif;
     font-size: 17px;
-    height: 400px;
+    height: 300px;
     width: 100%;
     align-items: center;
     position: relative;

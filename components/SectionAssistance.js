@@ -9,6 +9,7 @@ const Container = styled.div`
     justify-content: center;
     width: 100%;
     height: 100%;
+    flex-direction: column;
 `
 
 const SectionInfo = styled.section`
@@ -18,14 +19,14 @@ const SectionInfo = styled.section`
     background-color: transparent;
     font-family: 'Montserrat', sans-serif;
     font-size: 17px;
-    height: 350px;
+    height: 370px;
     width: 100%;
     align-items: center;
     position: relative;
     align-items: center;
     justify-content: center;
     display: flex;
-    padding-bottom: 40px;
+    padding: 60px 0px;
 `
 const Title = styled.h4`
     font-family: 'Montserrat', sans-serif;
@@ -38,13 +39,17 @@ const Title = styled.h4`
 `
 const Column = styled.div`
     text-align: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 `
 const TextContainers = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
-    height: 60px;
+    height: fit-content;
 `
 const Paragraph = styled.p`
     font-family: 'Montserrat', sans-serif;

@@ -10,12 +10,11 @@ const SectionInfo = styled.section`
     background-color: #fff;
     font-family: 'Montserrat', sans-serif;
     font-size: 17px;
-    position: absolute;
     width: 100%;
     height: 100%;
     align-items: center;
     position: relative;
-    padding-bottom: 20px;
+    padding-bottom: 40px;
     `
 const Title = styled.h4`
     font-family: 'Montserrat', sans-serif;

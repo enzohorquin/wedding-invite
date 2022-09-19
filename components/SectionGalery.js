@@ -9,6 +9,7 @@ const customLoader = ({ src }) => {
 
 const SectionGaleryImages = styled.section`
     padding-bottom: 40px;
+    padding-top: 40px;
     text-align: center;
     max-width: 100%;
     overflow-x: hidden;
